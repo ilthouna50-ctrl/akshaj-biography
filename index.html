@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Akshaj Hegde — Raven House Captain Candidate</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet"/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
+    rel="stylesheet" />
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --navy:       #0a0e1a;
-      --deep-blue:  #0d1630;
-      --raven-blue: #1a2a5e;
-      --mid-blue:   #243580;
-      --accent:     #4a7fd4;
-      --gold:       #c9a84c;
-      --silver:     #b8c4d8;
-      --white:      #f0f4ff;
-      --body:       #8a9bbf;
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-    html { scroll-behavior: smooth; }
+    :root {
+      --navy: #0a0e1a;
+      --deep-blue: #0d1630;
+      --raven-blue: #1a2a5e;
+      --mid-blue: #243580;
+      --accent: #4a7fd4;
+      --gold: #c9a84c;
+      --silver: #b8c4d8;
+      --white: #f0f4ff;
+      --body: #8a9bbf;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       background: var(--navy);
@@ -45,8 +56,8 @@
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(ellipse 60% 80% at 70% 50%, rgba(26,42,94,0.7) 0%, transparent 70%),
-        radial-gradient(ellipse 40% 60% at 20% 80%, rgba(74,127,212,0.12) 0%, transparent 60%);
+        radial-gradient(ellipse 60% 80% at 70% 50%, rgba(26, 42, 94, 0.7) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 20% 80%, rgba(74, 127, 212, 0.12) 0%, transparent 60%);
     }
 
     /* giant watermark raven R */
@@ -58,20 +69,23 @@
       transform: translateY(-50%);
       font-family: 'Bebas Neue', sans-serif;
       font-size: clamp(300px, 45vw, 700px);
-      color: rgba(74,127,212,0.04);
+      color: rgba(74, 127, 212, 0.04);
       pointer-events: none;
       line-height: 1;
       z-index: 0;
     }
 
-    .hero-text { position: relative; z-index: 2; }
+    .hero-text {
+      position: relative;
+      z-index: 2;
+    }
 
     .house-tag {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: rgba(74,127,212,0.15);
-      border: 1px solid rgba(74,127,212,0.4);
+      background: rgba(74, 127, 212, 0.15);
+      border: 1px solid rgba(74, 127, 212, 0.4);
       border-radius: 4px;
       padding: 6px 14px;
       font-size: 11px;
@@ -82,7 +96,12 @@
       margin-bottom: 28px;
     }
 
-    .house-tag .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+    .house-tag .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
 
     h1 {
       font-family: 'Bebas Neue', sans-serif;
@@ -93,7 +112,9 @@
       margin-bottom: 8px;
     }
 
-    h1 span { color: var(--accent); }
+    h1 span {
+      color: var(--accent);
+    }
 
     .hero-subtitle {
       font-family: 'Playfair Display', serif;
@@ -112,7 +133,11 @@
       margin-bottom: 40px;
     }
 
-    .cta-row { display: flex; gap: 16px; flex-wrap: wrap; }
+    .cta-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
 
     .btn-primary {
       background: var(--accent);
@@ -130,12 +155,15 @@
       transition: background 0.2s, transform 0.15s;
     }
 
-    .btn-primary:hover { background: #5a8fe0; transform: translateY(-1px); }
+    .btn-primary:hover {
+      background: #5a8fe0;
+      transform: translateY(-1px);
+    }
 
     .btn-ghost {
       background: transparent;
       color: var(--silver);
-      border: 1px solid rgba(184,196,216,0.35);
+      border: 1px solid rgba(184, 196, 216, 0.35);
       padding: 14px 32px;
       font-family: 'Inter', sans-serif;
       font-weight: 500;
@@ -148,7 +176,10 @@
       transition: border-color 0.2s, color 0.2s;
     }
 
-    .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+    .btn-ghost:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
 
     /* photo side */
     .hero-photo-wrap {
@@ -167,7 +198,7 @@
       object-fit: cover;
       object-position: top center;
       display: block;
-      filter: drop-shadow(0 0 60px rgba(74,127,212,0.3));
+      filter: drop-shadow(0 0 60px rgba(74, 127, 212, 0.3));
       mask-image: linear-gradient(to top, transparent 0%, black 18%);
       -webkit-mask-image: linear-gradient(to top, transparent 0%, black 18%);
     }
@@ -180,7 +211,7 @@
       transform: translateX(-50%);
       width: 500px;
       height: 500px;
-      background: radial-gradient(circle, rgba(74,127,212,0.18) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(74, 127, 212, 0.18) 0%, transparent 70%);
       pointer-events: none;
     }
 
@@ -209,20 +240,31 @@
     }
 
     @keyframes scrollPulse {
-      0%, 100% { opacity: 0.4; transform: scaleY(1); }
-      50% { opacity: 1; transform: scaleY(1.15); }
+
+      0%,
+      100% {
+        opacity: 0.4;
+        transform: scaleY(1);
+      }
+
+      50% {
+        opacity: 1;
+        transform: scaleY(1.15);
+      }
     }
 
     /* ── NAV ── */
     nav {
       position: fixed;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       z-index: 100;
       padding: 20px 6vw;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: linear-gradient(to bottom, rgba(10,14,26,0.95) 0%, transparent 100%);
+      background: linear-gradient(to bottom, rgba(10, 14, 26, 0.95) 0%, transparent 100%);
       backdrop-filter: blur(4px);
     }
 
@@ -234,9 +276,16 @@
       text-decoration: none;
     }
 
-    .nav-logo span { color: var(--accent); }
+    .nav-logo span {
+      color: var(--accent);
+    }
 
-    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+
     .nav-links a {
       color: var(--body);
       text-decoration: none;
@@ -246,10 +295,15 @@
       text-transform: uppercase;
       transition: color 0.2s;
     }
-    .nav-links a:hover { color: var(--accent); }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
 
     /* ── SECTIONS ── */
-    section { padding: 100px 6vw; }
+    section {
+      padding: 100px 6vw;
+    }
 
     .section-label {
       font-size: 11px;
@@ -291,10 +345,12 @@
     #about::before {
       content: '';
       position: absolute;
-      top: -100px; right: -100px;
-      width: 600px; height: 600px;
+      top: -100px;
+      right: -100px;
+      width: 600px;
+      height: 600px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(74,127,212,0.07) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(74, 127, 212, 0.07) 0%, transparent 70%);
       pointer-events: none;
     }
 
@@ -312,9 +368,14 @@
       color: var(--body);
     }
 
-    .about-body p + p { margin-top: 20px; }
+    .about-body p+p {
+      margin-top: 20px;
+    }
 
-    .about-body strong { color: var(--white); font-weight: 600; }
+    .about-body strong {
+      color: var(--white);
+      font-weight: 600;
+    }
 
     .stat-grid {
       display: grid;
@@ -324,8 +385,8 @@
     }
 
     .stat-card {
-      background: rgba(74,127,212,0.07);
-      border: 1px solid rgba(74,127,212,0.18);
+      background: rgba(74, 127, 212, 0.07);
+      border: 1px solid rgba(74, 127, 212, 0.18);
       padding: 28px 24px;
       position: relative;
     }
@@ -333,8 +394,10 @@
     .stat-card::before {
       content: '';
       position: absolute;
-      top: 0; left: 0;
-      width: 3px; height: 100%;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 100%;
       background: var(--accent);
     }
 
@@ -358,7 +421,7 @@
     .quote-block {
       border-left: 3px solid var(--gold);
       padding: 20px 28px;
-      background: rgba(201,168,76,0.06);
+      background: rgba(201, 168, 76, 0.06);
       margin-top: 32px;
     }
 
@@ -390,19 +453,25 @@
       transition: background 0.3s;
     }
 
-    .pillar:hover { background: rgba(26,42,94,0.8); }
+    .pillar:hover {
+      background: rgba(26, 42, 94, 0.8);
+    }
 
     .pillar::after {
       content: '';
       position: absolute;
-      bottom: 0; left: 0; right: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
       height: 2px;
       background: var(--accent);
       transform: scaleX(0);
       transition: transform 0.3s;
     }
 
-    .pillar:hover::after { transform: scaleX(1); }
+    .pillar:hover::after {
+      transform: scaleX(1);
+    }
 
     .pillar-icon {
       font-size: 36px;
@@ -437,14 +506,16 @@
       max-width: 1200px;
     }
 
-    .subject-list { margin-top: 12px; }
+    .subject-list {
+      margin-top: 12px;
+    }
 
     .subject-item {
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 18px 0;
-      border-bottom: 1px solid rgba(74,127,212,0.15);
+      border-bottom: 1px solid rgba(74, 127, 212, 0.15);
       gap: 24px;
     }
 
@@ -459,7 +530,7 @@
     .subject-bar-wrap {
       flex: 1;
       height: 4px;
-      background: rgba(74,127,212,0.15);
+      background: rgba(74, 127, 212, 0.15);
       border-radius: 2px;
       overflow: hidden;
     }
@@ -485,12 +556,14 @@
       color: var(--body);
     }
 
-    .academics-desc p + p { margin-top: 18px; }
+    .academics-desc p+p {
+      margin-top: 18px;
+    }
 
     .achievement-chip {
       display: inline-block;
-      background: rgba(74,127,212,0.12);
-      border: 1px solid rgba(74,127,212,0.3);
+      background: rgba(74, 127, 212, 0.12);
+      border: 1px solid rgba(74, 127, 212, 0.3);
       color: var(--accent);
       font-size: 12px;
       font-weight: 500;
@@ -510,10 +583,12 @@
     #sports::before {
       content: '';
       position: absolute;
-      bottom: -200px; left: -100px;
-      width: 700px; height: 700px;
+      bottom: -200px;
+      left: -100px;
+      width: 700px;
+      height: 700px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(74,127,212,0.06) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(74, 127, 212, 0.06) 0%, transparent 70%);
     }
 
     .sports-grid {
@@ -525,7 +600,7 @@
 
     .sport-card {
       background: var(--deep-blue);
-      border: 1px solid rgba(74,127,212,0.15);
+      border: 1px solid rgba(74, 127, 212, 0.15);
       padding: 36px 28px;
       text-align: center;
       transition: border-color 0.3s, transform 0.2s;
@@ -536,7 +611,11 @@
       transform: translateY(-4px);
     }
 
-    .sport-icon { font-size: 40px; margin-bottom: 16px; display: block; }
+    .sport-icon {
+      font-size: 40px;
+      margin-bottom: 16px;
+      display: block;
+    }
 
     .sport-name {
       font-family: 'Bebas Neue', sans-serif;
@@ -573,30 +652,33 @@
 
     .house-card {
       padding: 32px 24px;
-      border: 1px solid rgba(255,255,255,0.08);
+      border: 1px solid rgba(255, 255, 255, 0.08);
       position: relative;
       transition: border-color 0.3s;
     }
 
     .house-card.raven {
-      background: linear-gradient(135deg, rgba(26,42,94,0.5), rgba(13,22,48,0.7));
+      background: linear-gradient(135deg, rgba(26, 42, 94, 0.5), rgba(13, 22, 48, 0.7));
       border-color: var(--accent);
     }
 
     .house-card.raven::after {
       content: 'CANDIDATE';
       position: absolute;
-      top: 16px; right: 16px;
+      top: 16px;
+      right: 16px;
       font-size: 9px;
       font-weight: 700;
       letter-spacing: 0.18em;
       color: var(--gold);
-      background: rgba(201,168,76,0.12);
-      border: 1px solid rgba(201,168,76,0.3);
+      background: rgba(201, 168, 76, 0.12);
+      border: 1px solid rgba(201, 168, 76, 0.3);
       padding: 3px 8px;
     }
 
-    .house-card:not(.raven) { background: rgba(255,255,255,0.02); }
+    .house-card:not(.raven) {
+      background: rgba(255, 255, 255, 0.02);
+    }
 
     .house-initial {
       font-family: 'Bebas Neue', sans-serif;
@@ -605,8 +687,13 @@
       margin-bottom: 12px;
     }
 
-    .house-card.raven .house-initial { color: var(--accent); }
-    .house-card:not(.raven) .house-initial { color: rgba(255,255,255,0.2); }
+    .house-card.raven .house-initial {
+      color: var(--accent);
+    }
+
+    .house-card:not(.raven) .house-initial {
+      color: rgba(255, 255, 255, 0.2);
+    }
 
     .house-name {
       font-weight: 600;
@@ -616,8 +703,13 @@
       margin-bottom: 8px;
     }
 
-    .house-card.raven .house-name { color: var(--white); }
-    .house-card:not(.raven) .house-name { color: rgba(255,255,255,0.4); }
+    .house-card.raven .house-name {
+      color: var(--white);
+    }
+
+    .house-card:not(.raven) .house-name {
+      color: rgba(255, 255, 255, 0.4);
+    }
 
     .house-motto {
       font-size: 12px;
@@ -625,7 +717,9 @@
       font-style: italic;
     }
 
-    .house-card.raven .house-motto { color: var(--silver); }
+    .house-card.raven .house-motto {
+      color: var(--silver);
+    }
 
     /* ── VISION ── */
     #vision {
@@ -638,17 +732,23 @@
     #vision::before {
       content: 'RAVEN';
       position: absolute;
-      top: 50%; left: 50%;
+      top: 50%;
+      left: 50%;
       transform: translate(-50%, -50%);
       font-family: 'Bebas Neue', sans-serif;
       font-size: clamp(80px, 20vw, 280px);
-      color: rgba(255,255,255,0.025);
+      color: rgba(255, 255, 255, 0.025);
       letter-spacing: 0.15em;
       pointer-events: none;
       white-space: nowrap;
     }
 
-    .vision-content { position: relative; z-index: 2; max-width: 800px; margin: 0 auto; }
+    .vision-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      margin: 0 auto;
+    }
 
     .vision-quote {
       font-family: 'Playfair Display', serif;
@@ -676,8 +776,8 @@
     }
 
     .manifesto-item {
-      background: rgba(0,0,0,0.2);
-      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.08);
       padding: 28px 24px;
     }
 
@@ -692,7 +792,7 @@
     .manifesto-item p {
       font-size: 13px;
       line-height: 1.7;
-      color: rgba(240,244,255,0.7);
+      color: rgba(240, 244, 255, 0.7);
     }
 
     /* ── FOOTER ── */
@@ -702,17 +802,19 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-top: 1px solid rgba(74,127,212,0.15);
+      border-top: 1px solid rgba(74, 127, 212, 0.15);
     }
 
     .footer-logo {
       font-family: 'Bebas Neue', sans-serif;
       font-size: 28px;
       letter-spacing: 0.08em;
-      color: rgba(255,255,255,0.5);
+      color: rgba(255, 255, 255, 0.5);
     }
 
-    .footer-logo span { color: var(--accent); }
+    .footer-logo span {
+      color: var(--accent);
+    }
 
     .footer-text {
       font-size: 12px;
@@ -723,302 +825,388 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
-      .hero { grid-template-columns: 1fr; padding-top: 120px; }
-      .hero-photo-wrap { height: 50vh; }
-      .hero-photo-wrap img { height: 50vh; }
-      .about-grid, .academics-layout { grid-template-columns: 1fr; gap: 48px; }
-      .pillars-grid { grid-template-columns: 1fr; }
-      .sports-grid { grid-template-columns: 1fr 1fr; }
-      .houses-row { grid-template-columns: 1fr 1fr; }
-      .manifesto-grid { grid-template-columns: 1fr; }
-      .nav-links { display: none; }
-      footer { flex-direction: column; gap: 16px; text-align: center; }
-      .footer-text { text-align: center; }
+      .hero {
+        grid-template-columns: 1fr;
+        padding-top: 120px;
+      }
+
+      .hero-photo-wrap {
+        height: 50vh;
+      }
+
+      .hero-photo-wrap img {
+        height: 50vh;
+      }
+
+      .about-grid,
+      .academics-layout {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+
+      .pillars-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sports-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .houses-row {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .manifesto-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+      }
+
+      .footer-text {
+        text-align: center;
+      }
     }
 
     @media (max-width: 520px) {
-      .sports-grid { grid-template-columns: 1fr; }
-      .houses-row { grid-template-columns: 1fr; }
-      .stat-grid { grid-template-columns: 1fr; }
+      .sports-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .houses-row {
+        grid-template-columns: 1fr;
+      }
+
+      .stat-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      * { animation: none !important; transition: none !important; }
+      * {
+        animation: none !important;
+        transition: none !important;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<!-- NAV -->
-<nav>
-  <a href="#" class="nav-logo">AKSHAJ <span>HEGDE</span></a>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#pillars">Leadership</a></li>
-    <li><a href="#academics">Academics</a></li>
-    <li><a href="#sports">Sports</a></li>
-    <li><a href="#vision">Vision</a></li>
-  </ul>
-</nav>
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">AKSHAJ <span>HEGDE</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#pillars">Leadership</a></li>
+      <li><a href="#academics">Academics</a></li>
+      <li><a href="#sports">Sports</a></li>
+      <li><a href="#vision">Vision</a></li>
+    </ul>
+  </nav>
 
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-text">
-    <div class="house-tag">
-      <span class="dot"></span>
-      Raven House · Class X 'B'
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <div class="house-tag">
+        <span class="dot"></span>
+        Raven House · Class X 'B'
+      </div>
+      <h1>AKSHAJ<br /><span>HEGDE</span></h1>
+      <p class="hero-subtitle">Candidate for Raven House Captain</p>
+      <p class="hero-desc">
+        A leader who listens, a student who strives, and an athlete who competes with heart.
+        Akshaj brings the full spirit of Raven — collaboration, initiative, and impact —
+        to everything he does.
+      </p>
+      <div class="cta-row">
+        <a href="#pillars" class="btn-primary">His Leadership</a>
+        <a href="#vision" class="btn-ghost">His Vision</a>
+      </div>
     </div>
-    <h1>AKSHAJ<br/><span>HEGDE</span></h1>
-    <p class="hero-subtitle">Candidate for Raven House Captain</p>
-    <p class="hero-desc">
-      A leader who listens, a student who strives, and an athlete who competes with heart.
-      Akshaj brings the full spirit of Raven — collaboration, initiative, and impact —
-      to everything he does.
+
+    <div class="hero-photo-wrap">
+      <div class="photo-glow"></div>
+      <img src="akshaj.png" alt="Akshaj Hegde" />
+    </div>
+
+    <div class="scroll-hint">
+      <span>Explore</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid">
+      <div>
+        <div class="section-label">Biography</div>
+        <h2 class="section-title">WHO IS AKSHAJ?</h2>
+        <div class="about-body">
+          <p>
+            Akshaj Hegde is a <strong>Grade X 'B'</strong> student with a reputation that precedes him in every corridor
+            of the school. Whether it's the classroom, the sports field, or a school event, Akshaj is the person others
+            naturally look to — not because he demands it, but because he earns it.
+          </p>
+          <p>
+            Over his years at school, Akshaj has built a quiet, unshakable credibility. He combines <strong>academic
+              diligence</strong> with genuine athletic ability, and layers both with a sense of responsibility toward
+            his peers that makes him an instinctive leader.
+          </p>
+          <p>
+            As a candidate for <strong>Raven House Captain</strong>, Akshaj doesn't just represent the house — he
+            embodies its values: collaborate, uplift, lead by example, and make an impact.
+          </p>
+        </div>
+        <div class="quote-block">
+          <p>"Ravens don't follow. They lead."</p>
+        </div>
+      </div>
+      <div>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="stat-num">10+</div>
+            <div class="stat-label">Years of School Life</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">X</div>
+            <div class="stat-label">Grade & Section B</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">4</div>
+            <div class="stat-label">Houses — Raven is Home</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">1</div>
+            <div class="stat-label">Vision — One Raven Team</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILLARS -->
+  <section id="pillars">
+    <div class="section-label">What Sets Him Apart</div>
+    <h2 class="section-title">THREE PILLARS<br />OF LEADERSHIP</h2>
+
+    <div class="pillars-grid">
+      <div class="pillar">
+        <span class="pillar-icon">🤝</span>
+        <div class="pillar-title">Represent</div>
+        <p class="pillar-body">
+          Akshaj believes every voice in Raven matters. He actively listens to his peers, raises their concerns, and
+          ensures no one feels unheard. His leadership style is collaborative — he builds consensus before taking
+          action, so the team always moves together.
+        </p>
+      </div>
+      <div class="pillar">
+        <span class="pillar-icon">🎯</span>
+        <div class="pillar-title">Initiate</div>
+        <p class="pillar-body">
+          Ideas don't scare Akshaj — inaction does. He has a track record of stepping up when something needs to be
+          done, whether organizing house events, mediating disagreements, or motivating teammates during tough matches.
+          He doesn't wait for problems to solve themselves.
+        </p>
+      </div>
+      <div class="pillar">
+        <span class="pillar-icon">🛡️</span>
+        <div class="pillar-title">Rely</div>
+        <p class="pillar-body">
+          What makes Akshaj stand out is consistency. He shows up — for practice, for study sessions, for friends who
+          need support. His peers trust him because he's never let them down. Accountable, approachable, and always
+          present: that's the kind of captain Raven deserves.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACADEMICS -->
+  <section id="academics">
+    <div class="academics-layout">
+      <div>
+        <div class="section-label">Scholastics</div>
+        <h2 class="section-title">ACADEMICS</h2>
+        <div class="subject-list">
+          <div class="subject-item">
+            <span class="subject-name">Mathematics</span>
+            <div class="subject-bar-wrap">
+              <div class="subject-bar" style="width:100%"></div>
+            </div>
+            <span class="subject-grade">A+</span>
+          </div>
+          <div class="subject-item">
+            <span class="subject-name">Science</span>
+            <div class="subject-bar-wrap">
+              <div class="subject-bar" style="width:100%"></div>
+            </div>
+            <span class="subject-grade">A+</span>
+          </div>
+          <div class="subject-item">
+            <span class="subject-name">English</span>
+            <div class="subject-bar-wrap">
+              <div class="subject-bar" style="width:100%"></div>
+            </div>
+            <span class="subject-grade">A+</span>
+          </div>
+          <div class="subject-item">
+            <span class="subject-name">Social Studies</span>
+            <div class="subject-bar-wrap">
+              <div class="subject-bar" style="width:100%"></div>
+            </div>
+            <span class="subject-grade">A+</span>
+          </div>
+          <div class="subject-item">
+            <span class="subject-name">Languages</span>
+            <div class="subject-bar-wrap">
+              <div class="subject-bar" style="width:100%"></div>
+            </div>
+            <span class="subject-grade">A+</span>
+          </div>
+        </div>
+      </div>
+      <div class="academics-desc">
+        <p>
+          Akshaj is a <strong style="color:var(--white)">dedicated and consistent</strong> student. He doesn't chase
+          perfection for its own sake — he aims to genuinely understand what he learns, and that intellectual curiosity
+          shows in how he participates in class and helps his classmates.
+        </p>
+        <p>
+          Balancing a demanding academic load with sports and leadership responsibilities is no small feat. Akshaj
+          manages it with <strong style="color:var(--white)">discipline and time management</strong> that could be a
+          template for any student looking to do more than just get through the school year.
+        </p>
+        <p>
+          His teachers note that he asks the right questions, stays focused during lessons, and is always willing to go
+          back and review a concept until it clicks — not just for himself, but for his group.
+        </p>
+        <div style="margin-top: 28px;">
+          <span class="achievement-chip">Consistent Performer</span>
+          <span class="achievement-chip">Class Participation</span>
+          <span class="achievement-chip">Group Study Leader</span>
+          <span class="achievement-chip">Responsible Learner</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPORTS -->
+  <section id="sports">
+    <div class="section-label">Athletics</div>
+    <h2 class="section-title">ON THE<br />FIELD</h2>
+    <p style="color:var(--body);font-size:15px;line-height:1.8;max-width:620px;margin-top:16px;">
+      Akshaj carries the same energy he brings to the classroom onto the sports field — focused, competitive, and deeply
+      committed to the team's success over individual glory.
     </p>
-    <div class="cta-row">
-      <a href="#pillars" class="btn-primary">His Leadership</a>
-      <a href="#vision" class="btn-ghost">His Vision</a>
-    </div>
-  </div>
 
-  <div class="hero-photo-wrap">
-    <div class="photo-glow"></div>
-    <img src="akshaj.png" alt="Akshaj Hegde" />
-  </div>
-
-  <div class="scroll-hint">
-    <span>Explore</span>
-    <div class="scroll-line"></div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="about-grid">
-    <div>
-      <div class="section-label">Biography</div>
-      <h2 class="section-title">WHO IS AKSHAJ?</h2>
-      <div class="about-body">
-        <p>
-          Akshaj Hegde is a <strong>Grade X 'B'</strong> student with a reputation that precedes him in every corridor of the school. Whether it's the classroom, the sports field, or a school event, Akshaj is the person others naturally look to — not because he demands it, but because he earns it.
-        </p>
-        <p>
-          Over his years at school, Akshaj has built a quiet, unshakable credibility. He combines <strong>academic diligence</strong> with genuine athletic ability, and layers both with a sense of responsibility toward his peers that makes him an instinctive leader.
-        </p>
-        <p>
-          As a candidate for <strong>Raven House Captain</strong>, Akshaj doesn't just represent the house — he embodies its values: collaborate, uplift, lead by example, and make an impact.
-        </p>
+    <div class="sports-grid">
+      <div class="sport-card">
+        <span class="sport-icon">🏏</span>
+        <div class="sport-name">Cricket</div>
+        <p class="sport-detail">A reliable all-rounder who knows when to play his shots and when to anchor the innings.
+          Cool under pressure.</p>
       </div>
-      <div class="quote-block">
-        <p>"Ravens don't follow. They lead."</p>
+      <div class="sport-card">
+        <span class="sport-icon">⚽</span>
+        <div class="sport-name">Football</div>
+        <p class="sport-detail">Brings tactical awareness and strong communication on the pitch — always organizing
+          teammates and reading the game.</p>
+      </div>
+      <div class="sport-card">
+        <span class="sport-icon">🏸</span>
+        <div class="sport-name">Badminton</div>
+        <p class="sport-detail">Sharp reflexes and smart placement. Competitive in singles, but thrives in doubles — a
+          natural partner.</p>
+      </div>
+      <div class="sport-card">
+        <span class="sport-icon">🏃</span>
+        <div class="sport-name">Athletics</div>
+        <p class="sport-detail">Consistent in track events, representing Raven with pride in inter-house competitions
+          and school sports days.</p>
       </div>
     </div>
-    <div>
-      <div class="stat-grid">
-        <div class="stat-card">
-          <div class="stat-num">10+</div>
-          <div class="stat-label">Years of School Life</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-num">X</div>
-          <div class="stat-label">Grade & Section B</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-num">4</div>
-          <div class="stat-label">Houses — Raven is Home</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-num">1</div>
-          <div class="stat-label">Vision — One Raven Team</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- PILLARS -->
-<section id="pillars">
-  <div class="section-label">What Sets Him Apart</div>
-  <h2 class="section-title">THREE PILLARS<br/>OF LEADERSHIP</h2>
-
-  <div class="pillars-grid">
-    <div class="pillar">
-      <span class="pillar-icon">🤝</span>
-      <div class="pillar-title">Represent</div>
-      <p class="pillar-body">
-        Akshaj believes every voice in Raven matters. He actively listens to his peers, raises their concerns, and ensures no one feels unheard. His leadership style is collaborative — he builds consensus before taking action, so the team always moves together.
-      </p>
-    </div>
-    <div class="pillar">
-      <span class="pillar-icon">🎯</span>
-      <div class="pillar-title">Initiate</div>
-      <p class="pillar-body">
-        Ideas don't scare Akshaj — inaction does. He has a track record of stepping up when something needs to be done, whether organizing house events, mediating disagreements, or motivating teammates during tough matches. He doesn't wait for problems to solve themselves.
-      </p>
-    </div>
-    <div class="pillar">
-      <span class="pillar-icon">🛡️</span>
-      <div class="pillar-title">Rely</div>
-      <p class="pillar-body">
-        What makes Akshaj stand out is consistency. He shows up — for practice, for study sessions, for friends who need support. His peers trust him because he's never let them down. Accountable, approachable, and always present: that's the kind of captain Raven deserves.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- ACADEMICS -->
-<section id="academics">
-  <div class="academics-layout">
-    <div>
-      <div class="section-label">Scholastics</div>
-      <h2 class="section-title">ACADEMICS</h2>
-      <div class="subject-list">
-        <div class="subject-item">
-          <span class="subject-name">Mathematics</span>
-          <div class="subject-bar-wrap"><div class="subject-bar" style="width:88%"></div></div>
-          <span class="subject-grade">A</span>
-        </div>
-        <div class="subject-item">
-          <span class="subject-name">Science</span>
-          <div class="subject-bar-wrap"><div class="subject-bar" style="width:85%"></div></div>
-          <span class="subject-grade">A</span>
-        </div>
-        <div class="subject-item">
-          <span class="subject-name">English</span>
-          <div class="subject-bar-wrap"><div class="subject-bar" style="width:82%"></div></div>
-          <span class="subject-grade">A</span>
-        </div>
-        <div class="subject-item">
-          <span class="subject-name">Social Studies</span>
-          <div class="subject-bar-wrap"><div class="subject-bar" style="width:80%"></div></div>
-          <span class="subject-grade">B+</span>
-        </div>
-        <div class="subject-item">
-          <span class="subject-name">Languages</span>
-          <div class="subject-bar-wrap"><div class="subject-bar" style="width:78%"></div></div>
-          <span class="subject-grade">B+</span>
-        </div>
-      </div>
-    </div>
-    <div class="academics-desc">
-      <p>
-        Akshaj is a <strong style="color:var(--white)">dedicated and consistent</strong> student. He doesn't chase perfection for its own sake — he aims to genuinely understand what he learns, and that intellectual curiosity shows in how he participates in class and helps his classmates.
-      </p>
-      <p>
-        Balancing a demanding academic load with sports and leadership responsibilities is no small feat. Akshaj manages it with <strong style="color:var(--white)">discipline and time management</strong> that could be a template for any student looking to do more than just get through the school year.
-      </p>
-      <p>
-        His teachers note that he asks the right questions, stays focused during lessons, and is always willing to go back and review a concept until it clicks — not just for himself, but for his group.
-      </p>
-      <div style="margin-top: 28px;">
-        <span class="achievement-chip">Consistent Performer</span>
-        <span class="achievement-chip">Class Participation</span>
-        <span class="achievement-chip">Group Study Leader</span>
-        <span class="achievement-chip">Responsible Learner</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SPORTS -->
-<section id="sports">
-  <div class="section-label">Athletics</div>
-  <h2 class="section-title">ON THE<br/>FIELD</h2>
-  <p style="color:var(--body);font-size:15px;line-height:1.8;max-width:620px;margin-top:16px;">
-    Akshaj carries the same energy he brings to the classroom onto the sports field — focused, competitive, and deeply committed to the team's success over individual glory.
-  </p>
-
-  <div class="sports-grid">
-    <div class="sport-card">
-      <span class="sport-icon">🏏</span>
-      <div class="sport-name">Cricket</div>
-      <p class="sport-detail">A reliable all-rounder who knows when to play his shots and when to anchor the innings. Cool under pressure.</p>
-    </div>
-    <div class="sport-card">
-      <span class="sport-icon">⚽</span>
-      <div class="sport-name">Football</div>
-      <p class="sport-detail">Brings tactical awareness and strong communication on the pitch — always organizing teammates and reading the game.</p>
-    </div>
-    <div class="sport-card">
-      <span class="sport-icon">🏸</span>
-      <div class="sport-name">Badminton</div>
-      <p class="sport-detail">Sharp reflexes and smart placement. Competitive in singles, but thrives in doubles — a natural partner.</p>
-    </div>
-    <div class="sport-card">
-      <span class="sport-icon">🏃</span>
-      <div class="sport-name">Athletics</div>
-      <p class="sport-detail">Consistent in track events, representing Raven with pride in inter-house competitions and school sports days.</p>
-    </div>
-  </div>
-</section>
-
-<!-- HOUSES -->
-<section id="houses">
-  <div class="section-label">School Houses</div>
-  <h2 class="section-title">THE FOUR<br/>HOUSES</h2>
-  <p class="houses-intro">
-    Our school stands on four proud houses — each with its own spirit, identity, and tradition. Akshaj proudly carries the banner of <strong style="color:var(--accent)">Raven House</strong>, the house that leads by example and soars together.
-  </p>
-
-  <div class="houses-row">
-    <div class="house-card">
-      <div class="house-initial">P</div>
-      <div class="house-name">Pelican</div>
-      <p class="house-motto">Nurture &amp; Protect</p>
-    </div>
-    <div class="house-card">
-      <div class="house-initial">M</div>
-      <div class="house-name">Moeven</div>
-      <p class="house-motto">Soar &amp; Explore</p>
-    </div>
-    <div class="house-card raven">
-      <div class="house-initial">R</div>
-      <div class="house-name">Raven</div>
-      <p class="house-motto">Lead. Unite. Impact.</p>
-    </div>
-    <div class="house-card">
-      <div class="house-initial">F</div>
-      <div class="house-name">Falcon</div>
-      <p class="house-motto">Speed &amp; Precision</p>
-    </div>
-  </div>
-</section>
-
-<!-- VISION -->
-<section id="vision">
-  <div class="vision-content">
-    <div class="section-label" style="justify-content:center;">His Promise to Raven</div>
-    <h2 class="section-title">THE VISION</h2>
-    <p class="vision-quote">
-      "One Team. One Vision. One Soar."
+  <!-- HOUSES -->
+  <section id="houses">
+    <div class="section-label">School Houses</div>
+    <h2 class="section-title">THE FOUR<br />HOUSES</h2>
+    <p class="houses-intro">
+      Our school stands on four proud houses — each with its own spirit, identity, and tradition. Akshaj proudly carries
+      the banner of <strong style="color:var(--accent)">Raven House</strong>, the house that leads by example and soars
+      together.
     </p>
-    <p class="vision-attr">— Akshaj Hegde, Raven House Captain Candidate</p>
 
-    <div class="manifesto-grid">
-      <div class="manifesto-item">
-        <h4>🤝 Together</h4>
-        <p>Every member of Raven has a role. As captain, Akshaj will make sure every student — visible or quiet, star or newcomer — feels they belong to something bigger than themselves.</p>
+    <div class="houses-row">
+      <div class="house-card">
+        <div class="house-initial">P</div>
+        <div class="house-name">Pelican</div>
+        <p class="house-motto">Nurture &amp; Protect</p>
       </div>
-      <div class="manifesto-item">
-        <h4>🔥 Driven</h4>
-        <p>House competitions, academic challenges, cultural events — Raven will show up prepared and passionate. Akshaj will push the house to punch above its weight in everything it enters.</p>
+      <div class="house-card">
+        <div class="house-initial">M</div>
+        <div class="house-name">Moeven</div>
+        <p class="house-motto">Soar &amp; Explore</p>
       </div>
-      <div class="manifesto-item">
-        <h4>⭐ Impact</h4>
-        <p>Beyond trophies and points, Akshaj wants Raven to be remembered for its character — the house that inspired others, the house that lifted its members, the house that made a real difference.</p>
+      <div class="house-card raven">
+        <div class="house-initial">R</div>
+        <div class="house-name">Raven</div>
+        <p class="house-motto">Lead. Unite. Impact.</p>
+      </div>
+      <div class="house-card">
+        <div class="house-initial">F</div>
+        <div class="house-name">Falcon</div>
+        <p class="house-motto">Speed &amp; Precision</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-logo">AKSHAJ <span>HEGDE</span></div>
-  <div class="footer-text">
-    Class X 'B' · Raven House Captain Candidate<br/>
-    <span style="color:rgba(138,155,191,0.5);font-size:11px;">One Team. One Vision. One Soar.</span>
-  </div>
-</footer>
+  <!-- VISION -->
+  <section id="vision">
+    <div class="vision-content">
+      <div class="section-label" style="justify-content:center;">His Promise to Raven</div>
+      <h2 class="section-title">THE VISION</h2>
+      <p class="vision-quote">
+        "One Team. One Vision. One Soar."
+      </p>
+      <p class="vision-attr">— Akshaj Hegde, Raven House Captain Candidate</p>
+
+      <div class="manifesto-grid">
+        <div class="manifesto-item">
+          <h4>🤝 Together</h4>
+          <p>Every member of Raven has a role. As captain, Akshaj will make sure every student — visible or quiet, star
+            or newcomer — feels they belong to something bigger than themselves.</p>
+        </div>
+        <div class="manifesto-item">
+          <h4>🔥 Driven</h4>
+          <p>House competitions, academic challenges, cultural events — Raven will show up prepared and passionate.
+            Akshaj will push the house to punch above its weight in everything it enters.</p>
+        </div>
+        <div class="manifesto-item">
+          <h4>⭐ Impact</h4>
+          <p>Beyond trophies and points, Akshaj wants Raven to be remembered for its character — the house that inspired
+            others, the house that lifted its members, the house that made a real difference.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">AKSHAJ <span>HEGDE</span></div>
+    <div class="footer-text">
+      Class X 'B' · Raven House Captain Candidate<br />
+      <span style="color:rgba(138,155,191,0.5);font-size:11px;">One Team. One Vision. One Soar.</span>
+    </div>
+  </footer>
 
 </body>
+
 </html>
